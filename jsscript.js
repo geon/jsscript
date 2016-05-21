@@ -40,7 +40,7 @@ Reader.prototype.getStamp = function () {
 	}
 
 	// Detect Endianness. This value should be an ascii char, stored in 32 bits.
-	// Unlike in the original C source, the endianness can’t be fixed after reading, since js numbers only have 56 bits of precision.
+	// Unlike in the original C source, the endianness can't be fixed after reading, since js numbers only have 56 bits of precision.
 	var littleEndian = this.dataView.getUint32(this.pos + 20) > 0xff;
 
 	// Read the stamp.
