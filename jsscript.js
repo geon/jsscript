@@ -153,7 +153,20 @@ ScreenState.prototype.insertString = function (string) {
 
 			var cell = document.createElement('span');
 			cell.className = this.classNameFromCursorAttribute();
-			cell.innerText = char;
+			switch (char) {
+
+				case "\t":
+					// TODO: Adapt the tab length to what column it's on.
+					cell.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+					break;
+
+				case "\n":
+					break;
+
+				default:
+					cell.innerText = char;
+					break;
+			}
 
 			var cellCurrentlyAtPosition = row.children[this.cursorAttributes.collumn];
 			if (cellCurrentlyAtPosition) {
