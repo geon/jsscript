@@ -230,6 +230,14 @@ ScreenState.prototype.applyCode = function (code) {
 	// 	'\d+[A-D]', // up/down/right/left
 	// ]
 
+	if (code == '?1034h') {
+
+		// > Interpret "meta" key, sets eighth bit.
+		// Something aboit having an xterm-compatible terminal? Ignore.
+		// http://invisible-island.net/xterm/ctlseqs/ctlseqs.html
+		return;
+	}
+
 	if (/[\d;]+m/.test(code)) {
 
 		this.applyColorCode(code);
