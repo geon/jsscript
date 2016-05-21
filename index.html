@@ -1,15 +1,22 @@
-<style>
-	pre {
-		background: #333;
-		color: #ddd;
-		font-family: Menlo, Consolas, Inconsolata, Courier, sans serif;
-	}
-</style>
-<pre id="terminal-cast"></pre>
-<script src="jsscript.js"></script>
-<script>
-	terminalCast(
-		document.getElementById('terminal-cast'),
-		'./demo'
-	);
-</script>
+<html>
+	<head>
+		<style>
+			pre {
+				background: #333;
+				color: #ddd;
+				font-family: Menlo, Consolas, Inconsolata, Courier, sans serif;
+			}
+		</style>
+		<link rel="stylesheet" href="jsscript.css">
+	</head>
+	<body>
+		<pre id="terminal-cast" class="jsscript"></pre>
+		<script src="jsscript.js"></script>
+		<script>
+			terminalCast(
+				document.getElementById('terminal-cast'),
+				'./demo-color'
+			);
+		</script>
+	</body>
+</html>

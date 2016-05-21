@@ -1,0 +1,20 @@
+
+.jsscript .bright {
+	font-weight: bold;
+}
+.jsscript .bright.black   { color: #808080; }
+.jsscript .bright.red     { color: #ff0000; }
+.jsscript .bright.green   { color: #00ff00; }
+.jsscript .bright.yellow  { color: #ffff00; }
+.jsscript .bright.blue    { color: #0000ff; }
+.jsscript .bright.magenta { color: #ff00ff; }
+.jsscript .bright.cyan    { color: #00ffff; }
+.jsscript .bright.white   { color: #ffffff; }
+.jsscript .black   { color: #000000; }
+.jsscript .red     { color: #800000; }
+.jsscript .green   { color: #008000; }
+.jsscript .yellow  { color: #808000; }
+.jsscript .blue    { color: #000080; }
+.jsscript .magenta { color: #800080; }
+.jsscript .cyan    { color: #008080; }
+.jsscript .white   { color: #c0c0c0; }
