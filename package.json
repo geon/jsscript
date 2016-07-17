@@ -1,0 +1,7 @@
+{
+  "name": "jsscript",
+  "devDependencies": {
+    "terminal.js": "git+https://github.com/Gottox/terminal.js.git",
+    "webpack": "^1.13.1"
+  }
+}

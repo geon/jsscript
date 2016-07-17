@@ -92,6 +92,9 @@ Reader.prototype.getFrame = function () {
 
 function terminalCast (el, url) {
 
+	var terminal = new window.Terminal({columns: 80, rows: 24});
+	HtmlOutput = window.Terminal.output.HtmlOutput;
+
 	var req = new XMLHttpRequest();
 	req.open("GET", url, true);
 	req.responseType = "arraybuffer";
@@ -101,7 +104,6 @@ function terminalCast (el, url) {
 		if (arrayBuffer) {
 
 			var reader = new Reader(new DataView(arrayBuffer));
-			var screen = new ScreenState(el);
 
 			function play () {
 
@@ -110,7 +112,8 @@ function terminalCast (el, url) {
 
 					setTimeout(function () {
 
-						screen.applyFrame(frame.content);
+						terminal.write(frame.content);
+						el.innerHTML = new HtmlOutput(terminal.state).toString();
 						play();
 
 					}, frame.delay);
@@ -122,176 +125,4 @@ function terminalCast (el, url) {
 	};
 
 	req.send();
-}
-
-
-
-
-
-
-
-
-
-
-function ScreenState (el) {
-
-	this.el = el;
-	this.cursorAttributes = {};
-}
-
-ScreenState.prototype.insertString = function (string) {
-
-	var row = this.el.children[this.cursorAttributes.row];
-	if (!row) {
-
-		row = document.createElement('span');
-		this.el.appendChild(row);
-	}
-
-	string.split('')
-		.forEach(function (char) {
-
-			var cell = document.createElement('span');
-			cell.className = this.classNameFromCursorAttribute();
-			switch (char) {
-
-				case "\t":
-					// TODO: Adapt the tab length to what column it's on.
-					cell.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
-					break;
-
-				case "\n":
-					break;
-
-				default:
-					cell.innerText = char;
-					break;
-			}
-
-			var cellCurrentlyAtPosition = row.children[this.cursorAttributes.collumn];
-			if (cellCurrentlyAtPosition) {
-
-				row.insertBefore(cell, cellCurrentlyAtPosition);
-				// Overwrite.
-				cellCurrentlyAtPosition.remove();
-
-			} else {
-
-				row.appendChild(cell);
-			}
-
-			++ this.cursorAttributes.col;
-		}.bind(this));
-};
-
-ScreenState.prototype.classNameFromCursorAttribute = function () {
-
-	return (
-		(this.cursorAttributes.bright
-			? 'bright '
-			: ''
-		) +
-		(this.cursorAttributes.foreground
-			? (this.cursorAttributes.foreground + ' ')
-			: ''
-		) +
-		(this.cursorAttributes.background
-			? (this.cursorAttributes.background + '-background')
-			: ''
-		)
-	);
-}
-
-ScreenState.prototype.applyFrame = function (content) {
-
-	// CSI control sequences. Threre are also 2-char patterns like this: /\x1b([^@-_][@-_]) but they don't seem to be used.
-	var codePattern = /\x1b\[([^@-~]+[@-~])/;
-
-	// Split saves the matched parenthesis (the code) between each split string fragment.
-	content
-		.split(codePattern)
-		.forEach(function(textOrCode, index) {
-
-			if (index%2) {
-
-				this.applyCode(textOrCode);
-
-			} else {
-
-				this.insertString(textOrCode);
-			}
-		}.bind(this));
-}
-
-ScreenState.prototype.applyCode = function (code) {
-
-	// var positionPatterns = [
-	// 	'\d+;\d+H', // set position row;col
-	// 	'\d+[A-D]', // up/down/right/left
-	// ]
-
-	if (code == '?1034h') {
-
-		// > Interpret "meta" key, sets eighth bit.
-		// Something aboit having an xterm-compatible terminal? Ignore.
-		// http://invisible-island.net/xterm/ctlseqs/ctlseqs.html
-		return;
-	}
-
-	if (/[\d;]+m/.test(code)) {
-
-		this.applyColorCode(code);
-		return;
-	}
-
-	console.warn('Unknown control code:', code);
-}
-
-ScreenState.prototype.applyColorCode = function (code) {
-
-	var colors = [
-		'black',
-		'red',
-		'green',
-		'yellow',
-		'blue',
-		'magenta',
-		'cyan',
-		'white'
-	];
-
-	// Lop off the ending 'm', split by ';'.
-	code.slice(0, -1).split(';').forEach(function (code) {
-
-		var numericCode = parseInt(code, 10);
-		switch (Math.floor(numericCode / 10)) {
-			case 0:
-				switch (numericCode) {
-					case 0:
-						this.cursorAttributes = {};
-						break;
-					case 1:
-						this.cursorAttributes.bright = true;
-						break;
-					case 2:
-						this.cursorAttributes.bright = false;
-						break;
-
-					default:
-						console.warn('Unknown color control code:', code);
-						break;
-				}
-				break;
-			case 3:
-				this.cursorAttributes.foreground = colors[numericCode - 30];
-				break;
-			case 4:
-				this.cursorAttributes.background = colors[numericCode - 40];
-				break;
-
-			default:
-				console.warn('Unknown color control code:', code);
-				break;
-		}
-	}.bind(this));
 }
