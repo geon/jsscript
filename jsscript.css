@@ -1,15 +1,22 @@
 
-.jsscript .bright {
+/*
+.jsscript .bright, .jsscript .bold {
 	font-weight: bold;
 }
-.jsscript .bright.black   { color: #808080; }
-.jsscript .bright.red     { color: #ff0000; }
-.jsscript .bright.green   { color: #00ff00; }
-.jsscript .bright.yellow  { color: #ffff00; }
-.jsscript .bright.blue    { color: #0000ff; }
-.jsscript .bright.magenta { color: #ff00ff; }
-.jsscript .bright.cyan    { color: #00ffff; }
-.jsscript .bright.white   { color: #ffffff; }
+*/
+
+.jsscript {
+	background: #333;
+	color: #c0c0c0;
+}
+.jsscript .bright.black  , .jsscript .bold.black   { color: #808080; }
+.jsscript .bright.red    , .jsscript .bold.red     { color: #ff0000; }
+.jsscript .bright.green  , .jsscript .bold.green   { color: #00ff00; }
+.jsscript .bright.yellow , .jsscript .bold.yellow  { color: #ffff00; }
+.jsscript .bright.blue   , .jsscript .bold.blue    { color: #0000ff; }
+.jsscript .bright.magenta, .jsscript .bold.magenta { color: #ff00ff; }
+.jsscript .bright.cyan   , .jsscript .bold.cyan    { color: #00ffff; }
+.jsscript .bright.white  , .jsscript .bold.white   { color: #ffffff; }
 .jsscript .black   { color: #000000; }
 .jsscript .red     { color: #800000; }
 .jsscript .green   { color: #008000; }
@@ -18,3 +25,39 @@
 .jsscript .magenta { color: #800080; }
 .jsscript .cyan    { color: #008080; }
 .jsscript .white   { color: #c0c0c0; }
+.jsscript .background-black   { background: #000000; }
+.jsscript .background-red     { background: #800000; }
+.jsscript .background-green   { background: #008000; }
+.jsscript .background-yellow  { background: #808000; }
+.jsscript .background-blue    { background: #000080; }
+.jsscript .background-magenta { background: #800080; }
+.jsscript .background-cyan    { background: #008080; }
+.jsscript .background-white   { background: #c0c0c0; }
+.jsscript .inverse {
+	color: #333;
+	background: #c0c0c0;
+}
+.jsscript .inverse.bright.black  , .jsscript .inverse.bold.black   { background: #808080; }
+.jsscript .inverse.bright.red    , .jsscript .inverse.bold.red     { background: #ff0000; }
+.jsscript .inverse.bright.green  , .jsscript .inverse.bold.green   { background: #00ff00; }
+.jsscript .inverse.bright.yellow , .jsscript .inverse.bold.yellow  { background: #ffff00; }
+.jsscript .inverse.bright.blue   , .jsscript .inverse.bold.blue    { background: #0000ff; }
+.jsscript .inverse.bright.magenta, .jsscript .inverse.bold.magenta { background: #ff00ff; }
+.jsscript .inverse.bright.cyan   , .jsscript .inverse.bold.cyan    { background: #00ffff; }
+.jsscript .inverse.bright.white  , .jsscript .inverse.bold.white   { background: #ffffff; }
+.jsscript .inverse.black   { background: #000000; }
+.jsscript .inverse.red     { background: #800000; }
+.jsscript .inverse.green   { background: #008000; }
+.jsscript .inverse.yellow  { background: #808000; }
+.jsscript .inverse.blue    { background: #000080; }
+.jsscript .inverse.magenta { background: #800080; }
+.jsscript .inverse.cyan    { background: #008080; }
+.jsscript .inverse.white   { background: #c0c0c0; }
+.jsscript .inverse.background-black   { color: #000000; }
+.jsscript .inverse.background-red     { color: #800000; }
+.jsscript .inverse.background-green   { color: #008000; }
+.jsscript .inverse.background-yellow  { color: #808000; }
+.jsscript .inverse.background-blue    { color: #000080; }
+.jsscript .inverse.background-magenta { color: #800080; }
+.jsscript .inverse.background-cyan    { color: #008080; }
+.jsscript .inverse.background-white   { color: #c0c0c0; }

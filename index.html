@@ -2,8 +2,6 @@
 	<head>
 		<style>
 			pre {
-				background: #333;
-				color: #ddd;
 				font-family: Menlo, Consolas, Inconsolata, Courier, sans serif;
 			}
 		</style>
@@ -12,11 +10,12 @@
 	<body>
 		<pre id="terminal-cast" class="jsscript"></pre>
 		<script src="terminal.js"></script>
+		<script src="terminal-css-colors.js"></script>
 		<script src="jsscript.js"></script>
 		<script>
 			terminalCast(
 				document.getElementById('terminal-cast'),
-				'./overwrite-test'
+				'./demo-nano'
 			);
 		</script>
 	</body>
