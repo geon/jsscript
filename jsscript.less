@@ -18,7 +18,10 @@
 	@bright-blue,
 	@bright-magenta,
 	@bright-cyan,
-	@bright-white
+	@bright-white,
+
+	@common-ruleset: {}
+	@per-color-ruleset: {}
 ) {
 
 	background: @default-background;
@@ -40,6 +43,7 @@
 				}
 			}
 			&.background-@{color-name} { @{background-property}: @@neutral-color-name; }
+			@per-color-ruleset();
 		}
 
 		.set-color(black  );
@@ -50,6 +54,8 @@
 		.set-color(magenta);
 		.set-color(cyan   );
 		.set-color(white  );
+
+		@common-ruleset();
 	}
 
 	> div > span {
@@ -105,16 +111,14 @@
 			#66D9EF,
 			#AE81FF,
 			#82CDB9,
-			#ffffff
-		);
+			#ffffff,
 
-
-		> div > span {
-
-			&.bright,
-			&.bold {
-				font-weight: bold;
+			{
+				&.bright,
+				&.bold {
+					font-weight: bold;
+				}
 			}
-		}
+		);
 	}
 }
