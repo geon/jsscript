@@ -1,21 +1,110 @@
 <html>
 	<head>
 		<style>
+			* {
+			font-family: inherit;
+			letter-spacing: inherit;
+			}
+			html {
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, FontAwesome;
+			font-size: 16px;
+			letter-spacing: 0.03em;
+			background: #ffffff;
+			}
+			h1,
+			h2,
+			h3,
+			p,
+			ul,
+			pre,
+			hr {
+			margin-top: 1.5em;
+			}
+			h1,
+			h2,
+			h3 {
+			font-family: Georgia, serif;
+			color: #55ccff;
+			font-weight: normal;
+			}
+			h1 {
+			font-size: 2.25em;
+			}
+			h2 {
+			font-size: 1.5em;
+			}
+			h3 {
+			font-size: 1em;
+			font-weight: bold;
+			}
+			h3 + p {
+			margin-top: 0;
+			}
+			p,
+			li {
+			line-height: 1.5em;
+			}
+			a {
+			text-decoration: none;
+			color: #ff44aa;
+			}
+			a:visited {
+			color: #55ccff;
+			}
+			a:hover {
+			text-decoration: underline;
+			}
+			code {
+			background: #eee;
+			padding: 0.1em 0.25em;
+			border-radius: 0.25em;
+			}
+			#main {
+			width: 600px;
+			margin: 50px auto;
+			}
+
+
+
+			#wrapper {
+				display: flex;
+				justify-content: center;
+			}
 			pre {
 				font-family: Menlo, Consolas, Inconsolata, Courier, sans serif;
+				padding: 5px;
+				border-radius: 5px;
+				flex: 0 0 auto;
 			}
 		</style>
 		<link rel="stylesheet" href="jsscript.css">
 	</head>
 	<body>
-		<pre id="terminal-cast" class="jsscript monokai"></pre>
+		<div id="wrapper">
+			<pre id="terminal-cast" class="jsscript monokai" width="80"></pre>
+		</div>
+
+		<div id="main">
+
+			<h1>JsScript</h1>
+
+			<p>Possibly the least hyped feature of the El Capitan OS X update was a newer version of the terminal utility <code>script</code>. It now supports recording the timing of keypresses along with the input and output. The entire session can then be played back, like a text-based screencast.</p>
+
+			<p>JsScript lets you replay recorded terminal sessions on a website.</p>
+
+			<p>To record a terminal session, run <code>script -r</code> on any BSD system, like Mac OS X. It has been available in FreeBSD since <a href="https://github.com/freebsd/freebsd/commit/c60a6d31064674dbbba56ef3038ef105a1cdd8a8#diff-b65c05df5b548732d18f8800c409d4c0">Jul 2012</a>. The Gnu version of <code>script</code> is not compatible.</p>
+
+			<p>Source on <a href="https://github.com/geon/jsscript">Github</a>.</p>
+
+		</div>
+
 		<script src="terminal.js"></script>
 		<script src="terminal-css-colors.js"></script>
 		<script src="jsscript.js"></script>
 		<script>
 			terminalCast(
 				document.getElementById('terminal-cast'),
-				'./demo-color'
+				'./demo-pages'
 			);
 		</script>
 	</body>
