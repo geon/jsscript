@@ -31,12 +31,15 @@
 		.set-color (@color-name) {
 			@neutral-color-name: "neutral-@{color-name}";
 			@bright-color-name: "bright-@{color-name}";
-			&.@{color-name} { @{foreground-property}: @@neutral-color-name; }
-			&.background-@{color-name} { @{background-property}: @@neutral-color-name; }
-			&.bright,
-			&.bold {
-				&.@{color-name} { @{foreground-property}: @@bright-color-name; }
+			&.@{color-name} {
+				@{foreground-property}: @@neutral-color-name;
+
+				&.bright,
+				&.bold {
+					@{foreground-property}: @@bright-color-name;
+				}
 			}
+			&.background-@{color-name} { @{background-property}: @@neutral-color-name; }
 		}
 
 		.set-color(black  );
