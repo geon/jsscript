@@ -28,35 +28,25 @@
 		@{foreground-property}: @default-foreground;
 		@{background-property}: @default-background;
 
-		&.black   { @{foreground-property}: @neutral-black  ; }
-		&.red     { @{foreground-property}: @neutral-red    ; }
-		&.green   { @{foreground-property}: @neutral-green  ; }
-		&.yellow  { @{foreground-property}: @neutral-yellow ; }
-		&.blue    { @{foreground-property}: @neutral-blue   ; }
-		&.magenta { @{foreground-property}: @neutral-magenta; }
-		&.cyan    { @{foreground-property}: @neutral-cyan   ; }
-		&.white   { @{foreground-property}: @neutral-white  ; }
-
-		&.background-black   { @{background-property}: @neutral-black  ; }
-		&.background-red     { @{background-property}: @neutral-red    ; }
-		&.background-green   { @{background-property}: @neutral-green  ; }
-		&.background-yellow  { @{background-property}: @neutral-yellow ; }
-		&.background-blue    { @{background-property}: @neutral-blue   ; }
-		&.background-magenta { @{background-property}: @neutral-magenta; }
-		&.background-cyan    { @{background-property}: @neutral-cyan   ; }
-		&.background-white   { @{background-property}: @neutral-white  ; }
-
-		&.bright,
-		&.bold {
-			&.black   { @{foreground-property}: @bright-black  ; }
-			&.red     { @{foreground-property}: @bright-red    ; }
-			&.green   { @{foreground-property}: @bright-green  ; }
-			&.yellow  { @{foreground-property}: @bright-yellow ; }
-			&.blue    { @{foreground-property}: @bright-blue   ; }
-			&.magenta { @{foreground-property}: @bright-magenta; }
-			&.cyan    { @{foreground-property}: @bright-cyan   ; }
-			&.white   { @{foreground-property}: @bright-white  ; }
+		.set-color (@color-name) {
+			@neutral-color-name: "neutral-@{color-name}";
+			@bright-color-name: "bright-@{color-name}";
+			&.@{color-name} { @{foreground-property}: @@neutral-color-name; }
+			&.background-@{color-name} { @{background-property}: @@neutral-color-name; }
+			&.bright,
+			&.bold {
+				&.@{color-name} { @{foreground-property}: @@bright-color-name; }
+			}
 		}
+
+		.set-color(black  );
+		.set-color(red    );
+		.set-color(green  );
+		.set-color(yellow );
+		.set-color(blue   );
+		.set-color(magenta);
+		.set-color(cyan   );
+		.set-color(white  );
 	}
 
 	> div > span {
@@ -114,6 +104,7 @@
 			#82CDB9,
 			#ffffff
 		);
+
 
 		> div > span {
 
