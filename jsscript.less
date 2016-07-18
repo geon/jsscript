@@ -1,0 +1,126 @@
+
+.terminal-colors (
+	@default-foreground,
+	@default-background,
+
+	@neutral-black,
+	@neutral-red,
+	@neutral-green,
+	@neutral-yellow,
+	@neutral-blue,
+	@neutral-magenta,
+	@neutral-cyan,
+	@neutral-white,
+	@bright-black,
+	@bright-red,
+	@bright-green,
+	@bright-yellow,
+	@bright-blue,
+	@bright-magenta,
+	@bright-cyan,
+	@bright-white
+) {
+
+	background: @default-background;
+
+	.list-colors (@foreground-property, @background-property) {
+
+		@{foreground-property}: @default-foreground;
+		@{background-property}: @default-background;
+
+		&.black   { @{foreground-property}: @neutral-black  ; }
+		&.red     { @{foreground-property}: @neutral-red    ; }
+		&.green   { @{foreground-property}: @neutral-green  ; }
+		&.yellow  { @{foreground-property}: @neutral-yellow ; }
+		&.blue    { @{foreground-property}: @neutral-blue   ; }
+		&.magenta { @{foreground-property}: @neutral-magenta; }
+		&.cyan    { @{foreground-property}: @neutral-cyan   ; }
+		&.white   { @{foreground-property}: @neutral-white  ; }
+
+		&.background-black   { @{background-property}: @neutral-black  ; }
+		&.background-red     { @{background-property}: @neutral-red    ; }
+		&.background-green   { @{background-property}: @neutral-green  ; }
+		&.background-yellow  { @{background-property}: @neutral-yellow ; }
+		&.background-blue    { @{background-property}: @neutral-blue   ; }
+		&.background-magenta { @{background-property}: @neutral-magenta; }
+		&.background-cyan    { @{background-property}: @neutral-cyan   ; }
+		&.background-white   { @{background-property}: @neutral-white  ; }
+
+		&.bright,
+		&.bold {
+			&.black   { @{foreground-property}: @bright-black  ; }
+			&.red     { @{foreground-property}: @bright-red    ; }
+			&.green   { @{foreground-property}: @bright-green  ; }
+			&.yellow  { @{foreground-property}: @bright-yellow ; }
+			&.blue    { @{foreground-property}: @bright-blue   ; }
+			&.magenta { @{foreground-property}: @bright-magenta; }
+			&.cyan    { @{foreground-property}: @bright-cyan   ; }
+			&.white   { @{foreground-property}: @bright-white  ; }
+		}
+	}
+
+	> div > span {
+
+		.list-colors(color, background);
+		&.inverse {
+			.list-colors(background, color);
+		}
+	}
+}
+
+.jsscript {
+
+	.terminal-colors(
+		#808080,
+		#000000,
+
+		#000000,
+		#800000,
+		#008000,
+		#808000,
+		#000080,
+		#800080,
+		#008080,
+		#c0c0c0,
+		#808080,
+		#ff0000,
+		#00ff00,
+		#ffff00,
+		#0000ff,
+		#ff00ff,
+		#00ffff,
+		#ffffff
+	);
+
+	&.monokai {
+		.terminal-colors(
+			#F8F8F2,
+			#272822,
+
+			#000000,
+			#F92672,
+			#A6E22E,
+			#E6DB74,
+			#66D9EF,
+			#AE81FF,
+			#82CDB9,
+			#c0c0c0,
+			#808080,
+			#F92672,
+			#A6E22E,
+			#E6DB74,
+			#66D9EF,
+			#AE81FF,
+			#82CDB9,
+			#ffffff
+		);
+
+		> div > span {
+
+			&.bright,
+			&.bold {
+				font-weight: bold;
+			}
+		}
+	}
+}
