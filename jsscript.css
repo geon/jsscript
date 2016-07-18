@@ -2,172 +2,172 @@
   background: #000000;
 }
 .jsscript > div > span {
-  color: #808080;
+  color: #c0c0c0;
   background: #000000;
 }
 .jsscript > div > span.black {
   color: #000000;
 }
+.jsscript > div > span.black.bright,
+.jsscript > div > span.black.bold {
+  color: #808080;
+}
 .jsscript > div > span.background-black {
   background: #000000;
-}
-.jsscript > div > span.bright.black,
-.jsscript > div > span.bold.black {
-  color: #808080;
 }
 .jsscript > div > span.red {
   color: #800000;
 }
+.jsscript > div > span.red.bright,
+.jsscript > div > span.red.bold {
+  color: #ff0000;
+}
 .jsscript > div > span.background-red {
   background: #800000;
-}
-.jsscript > div > span.bright.red,
-.jsscript > div > span.bold.red {
-  color: #ff0000;
 }
 .jsscript > div > span.green {
   color: #008000;
 }
+.jsscript > div > span.green.bright,
+.jsscript > div > span.green.bold {
+  color: #00ff00;
+}
 .jsscript > div > span.background-green {
   background: #008000;
-}
-.jsscript > div > span.bright.green,
-.jsscript > div > span.bold.green {
-  color: #00ff00;
 }
 .jsscript > div > span.yellow {
   color: #808000;
 }
+.jsscript > div > span.yellow.bright,
+.jsscript > div > span.yellow.bold {
+  color: #ffff00;
+}
 .jsscript > div > span.background-yellow {
   background: #808000;
-}
-.jsscript > div > span.bright.yellow,
-.jsscript > div > span.bold.yellow {
-  color: #ffff00;
 }
 .jsscript > div > span.blue {
   color: #000080;
 }
+.jsscript > div > span.blue.bright,
+.jsscript > div > span.blue.bold {
+  color: #0000ff;
+}
 .jsscript > div > span.background-blue {
   background: #000080;
-}
-.jsscript > div > span.bright.blue,
-.jsscript > div > span.bold.blue {
-  color: #0000ff;
 }
 .jsscript > div > span.magenta {
   color: #800080;
 }
+.jsscript > div > span.magenta.bright,
+.jsscript > div > span.magenta.bold {
+  color: #ff00ff;
+}
 .jsscript > div > span.background-magenta {
   background: #800080;
-}
-.jsscript > div > span.bright.magenta,
-.jsscript > div > span.bold.magenta {
-  color: #ff00ff;
 }
 .jsscript > div > span.cyan {
   color: #008080;
 }
+.jsscript > div > span.cyan.bright,
+.jsscript > div > span.cyan.bold {
+  color: #00ffff;
+}
 .jsscript > div > span.background-cyan {
   background: #008080;
-}
-.jsscript > div > span.bright.cyan,
-.jsscript > div > span.bold.cyan {
-  color: #00ffff;
 }
 .jsscript > div > span.white {
   color: #c0c0c0;
 }
+.jsscript > div > span.white.bright,
+.jsscript > div > span.white.bold {
+  color: #ffffff;
+}
 .jsscript > div > span.background-white {
   background: #c0c0c0;
 }
-.jsscript > div > span.bright.white,
-.jsscript > div > span.bold.white {
-  color: #ffffff;
-}
 .jsscript > div > span.inverse {
-  background: #808080;
+  background: #c0c0c0;
   color: #000000;
 }
 .jsscript > div > span.inverse.black {
   background: #000000;
 }
+.jsscript > div > span.inverse.black.bright,
+.jsscript > div > span.inverse.black.bold {
+  background: #808080;
+}
 .jsscript > div > span.inverse.background-black {
   color: #000000;
-}
-.jsscript > div > span.inverse.bright.black,
-.jsscript > div > span.inverse.bold.black {
-  background: #808080;
 }
 .jsscript > div > span.inverse.red {
   background: #800000;
 }
+.jsscript > div > span.inverse.red.bright,
+.jsscript > div > span.inverse.red.bold {
+  background: #ff0000;
+}
 .jsscript > div > span.inverse.background-red {
   color: #800000;
-}
-.jsscript > div > span.inverse.bright.red,
-.jsscript > div > span.inverse.bold.red {
-  background: #ff0000;
 }
 .jsscript > div > span.inverse.green {
   background: #008000;
 }
+.jsscript > div > span.inverse.green.bright,
+.jsscript > div > span.inverse.green.bold {
+  background: #00ff00;
+}
 .jsscript > div > span.inverse.background-green {
   color: #008000;
-}
-.jsscript > div > span.inverse.bright.green,
-.jsscript > div > span.inverse.bold.green {
-  background: #00ff00;
 }
 .jsscript > div > span.inverse.yellow {
   background: #808000;
 }
+.jsscript > div > span.inverse.yellow.bright,
+.jsscript > div > span.inverse.yellow.bold {
+  background: #ffff00;
+}
 .jsscript > div > span.inverse.background-yellow {
   color: #808000;
-}
-.jsscript > div > span.inverse.bright.yellow,
-.jsscript > div > span.inverse.bold.yellow {
-  background: #ffff00;
 }
 .jsscript > div > span.inverse.blue {
   background: #000080;
 }
+.jsscript > div > span.inverse.blue.bright,
+.jsscript > div > span.inverse.blue.bold {
+  background: #0000ff;
+}
 .jsscript > div > span.inverse.background-blue {
   color: #000080;
-}
-.jsscript > div > span.inverse.bright.blue,
-.jsscript > div > span.inverse.bold.blue {
-  background: #0000ff;
 }
 .jsscript > div > span.inverse.magenta {
   background: #800080;
 }
+.jsscript > div > span.inverse.magenta.bright,
+.jsscript > div > span.inverse.magenta.bold {
+  background: #ff00ff;
+}
 .jsscript > div > span.inverse.background-magenta {
   color: #800080;
-}
-.jsscript > div > span.inverse.bright.magenta,
-.jsscript > div > span.inverse.bold.magenta {
-  background: #ff00ff;
 }
 .jsscript > div > span.inverse.cyan {
   background: #008080;
 }
+.jsscript > div > span.inverse.cyan.bright,
+.jsscript > div > span.inverse.cyan.bold {
+  background: #00ffff;
+}
 .jsscript > div > span.inverse.background-cyan {
   color: #008080;
-}
-.jsscript > div > span.inverse.bright.cyan,
-.jsscript > div > span.inverse.bold.cyan {
-  background: #00ffff;
 }
 .jsscript > div > span.inverse.white {
   background: #c0c0c0;
 }
+.jsscript > div > span.inverse.white.bright,
+.jsscript > div > span.inverse.white.bold {
+  background: #ffffff;
+}
 .jsscript > div > span.inverse.background-white {
   color: #c0c0c0;
-}
-.jsscript > div > span.inverse.bright.white,
-.jsscript > div > span.inverse.bold.white {
-  background: #ffffff;
 }
 .jsscript.monokai {
   background: #272822;
@@ -179,82 +179,86 @@
 .jsscript.monokai > div > span.black {
   color: #000000;
 }
+.jsscript.monokai > div > span.black.bright,
+.jsscript.monokai > div > span.black.bold {
+  color: #808080;
+}
 .jsscript.monokai > div > span.background-black {
   background: #000000;
 }
-.jsscript.monokai > div > span.bright.black,
-.jsscript.monokai > div > span.bold.black {
-  color: #808080;
-}
 .jsscript.monokai > div > span.red {
+  color: #F92672;
+}
+.jsscript.monokai > div > span.red.bright,
+.jsscript.monokai > div > span.red.bold {
   color: #F92672;
 }
 .jsscript.monokai > div > span.background-red {
   background: #F92672;
 }
-.jsscript.monokai > div > span.bright.red,
-.jsscript.monokai > div > span.bold.red {
-  color: #F92672;
-}
 .jsscript.monokai > div > span.green {
+  color: #A6E22E;
+}
+.jsscript.monokai > div > span.green.bright,
+.jsscript.monokai > div > span.green.bold {
   color: #A6E22E;
 }
 .jsscript.monokai > div > span.background-green {
   background: #A6E22E;
 }
-.jsscript.monokai > div > span.bright.green,
-.jsscript.monokai > div > span.bold.green {
-  color: #A6E22E;
-}
 .jsscript.monokai > div > span.yellow {
+  color: #E6DB74;
+}
+.jsscript.monokai > div > span.yellow.bright,
+.jsscript.monokai > div > span.yellow.bold {
   color: #E6DB74;
 }
 .jsscript.monokai > div > span.background-yellow {
   background: #E6DB74;
 }
-.jsscript.monokai > div > span.bright.yellow,
-.jsscript.monokai > div > span.bold.yellow {
-  color: #E6DB74;
-}
 .jsscript.monokai > div > span.blue {
+  color: #66D9EF;
+}
+.jsscript.monokai > div > span.blue.bright,
+.jsscript.monokai > div > span.blue.bold {
   color: #66D9EF;
 }
 .jsscript.monokai > div > span.background-blue {
   background: #66D9EF;
 }
-.jsscript.monokai > div > span.bright.blue,
-.jsscript.monokai > div > span.bold.blue {
-  color: #66D9EF;
-}
 .jsscript.monokai > div > span.magenta {
+  color: #AE81FF;
+}
+.jsscript.monokai > div > span.magenta.bright,
+.jsscript.monokai > div > span.magenta.bold {
   color: #AE81FF;
 }
 .jsscript.monokai > div > span.background-magenta {
   background: #AE81FF;
 }
-.jsscript.monokai > div > span.bright.magenta,
-.jsscript.monokai > div > span.bold.magenta {
-  color: #AE81FF;
-}
 .jsscript.monokai > div > span.cyan {
+  color: #82CDB9;
+}
+.jsscript.monokai > div > span.cyan.bright,
+.jsscript.monokai > div > span.cyan.bold {
   color: #82CDB9;
 }
 .jsscript.monokai > div > span.background-cyan {
   background: #82CDB9;
 }
-.jsscript.monokai > div > span.bright.cyan,
-.jsscript.monokai > div > span.bold.cyan {
-  color: #82CDB9;
-}
 .jsscript.monokai > div > span.white {
   color: #c0c0c0;
+}
+.jsscript.monokai > div > span.white.bright,
+.jsscript.monokai > div > span.white.bold {
+  color: #ffffff;
 }
 .jsscript.monokai > div > span.background-white {
   background: #c0c0c0;
 }
-.jsscript.monokai > div > span.bright.white,
-.jsscript.monokai > div > span.bold.white {
-  color: #ffffff;
+.jsscript.monokai > div > span.bright,
+.jsscript.monokai > div > span.bold {
+  font-weight: bold;
 }
 .jsscript.monokai > div > span.inverse {
   background: #F8F8F2;
@@ -263,84 +267,319 @@
 .jsscript.monokai > div > span.inverse.black {
   background: #000000;
 }
+.jsscript.monokai > div > span.inverse.black.bright,
+.jsscript.monokai > div > span.inverse.black.bold {
+  background: #808080;
+}
 .jsscript.monokai > div > span.inverse.background-black {
   color: #000000;
 }
-.jsscript.monokai > div > span.inverse.bright.black,
-.jsscript.monokai > div > span.inverse.bold.black {
-  background: #808080;
-}
 .jsscript.monokai > div > span.inverse.red {
+  background: #F92672;
+}
+.jsscript.monokai > div > span.inverse.red.bright,
+.jsscript.monokai > div > span.inverse.red.bold {
   background: #F92672;
 }
 .jsscript.monokai > div > span.inverse.background-red {
   color: #F92672;
 }
-.jsscript.monokai > div > span.inverse.bright.red,
-.jsscript.monokai > div > span.inverse.bold.red {
-  background: #F92672;
-}
 .jsscript.monokai > div > span.inverse.green {
+  background: #A6E22E;
+}
+.jsscript.monokai > div > span.inverse.green.bright,
+.jsscript.monokai > div > span.inverse.green.bold {
   background: #A6E22E;
 }
 .jsscript.monokai > div > span.inverse.background-green {
   color: #A6E22E;
 }
-.jsscript.monokai > div > span.inverse.bright.green,
-.jsscript.monokai > div > span.inverse.bold.green {
-  background: #A6E22E;
-}
 .jsscript.monokai > div > span.inverse.yellow {
+  background: #E6DB74;
+}
+.jsscript.monokai > div > span.inverse.yellow.bright,
+.jsscript.monokai > div > span.inverse.yellow.bold {
   background: #E6DB74;
 }
 .jsscript.monokai > div > span.inverse.background-yellow {
   color: #E6DB74;
 }
-.jsscript.monokai > div > span.inverse.bright.yellow,
-.jsscript.monokai > div > span.inverse.bold.yellow {
-  background: #E6DB74;
-}
 .jsscript.monokai > div > span.inverse.blue {
+  background: #66D9EF;
+}
+.jsscript.monokai > div > span.inverse.blue.bright,
+.jsscript.monokai > div > span.inverse.blue.bold {
   background: #66D9EF;
 }
 .jsscript.monokai > div > span.inverse.background-blue {
   color: #66D9EF;
 }
-.jsscript.monokai > div > span.inverse.bright.blue,
-.jsscript.monokai > div > span.inverse.bold.blue {
-  background: #66D9EF;
-}
 .jsscript.monokai > div > span.inverse.magenta {
+  background: #AE81FF;
+}
+.jsscript.monokai > div > span.inverse.magenta.bright,
+.jsscript.monokai > div > span.inverse.magenta.bold {
   background: #AE81FF;
 }
 .jsscript.monokai > div > span.inverse.background-magenta {
   color: #AE81FF;
 }
-.jsscript.monokai > div > span.inverse.bright.magenta,
-.jsscript.monokai > div > span.inverse.bold.magenta {
-  background: #AE81FF;
-}
 .jsscript.monokai > div > span.inverse.cyan {
+  background: #82CDB9;
+}
+.jsscript.monokai > div > span.inverse.cyan.bright,
+.jsscript.monokai > div > span.inverse.cyan.bold {
   background: #82CDB9;
 }
 .jsscript.monokai > div > span.inverse.background-cyan {
   color: #82CDB9;
 }
-.jsscript.monokai > div > span.inverse.bright.cyan,
-.jsscript.monokai > div > span.inverse.bold.cyan {
-  background: #82CDB9;
-}
 .jsscript.monokai > div > span.inverse.white {
   background: #c0c0c0;
+}
+.jsscript.monokai > div > span.inverse.white.bright,
+.jsscript.monokai > div > span.inverse.white.bold {
+  background: #ffffff;
 }
 .jsscript.monokai > div > span.inverse.background-white {
   color: #c0c0c0;
 }
-.jsscript.monokai > div > span.inverse.bright.white,
-.jsscript.monokai > div > span.inverse.bold.white {
+.jsscript.monokai > div > span.inverse.bright,
+.jsscript.monokai > div > span.inverse.bold {
+  font-weight: bold;
+}
+.jsscript.monokai-glow {
+  background: #272822;
+}
+.jsscript.monokai-glow > div > span {
+  color: #F8F8F2;
+  background: #272822;
+}
+.jsscript.monokai-glow > div > span.black {
+  color: #000000;
+}
+.jsscript.monokai-glow > div > span.black.bright,
+.jsscript.monokai-glow > div > span.black.bold {
+  color: #808080;
+}
+.jsscript.monokai-glow > div > span.background-black {
+  background: #000000;
+}
+.jsscript.monokai-glow > div > span.black.bright,
+.jsscript.monokai-glow > div > span.black.bold {
+  text-shadow: 0 0 5px "bright-black";
+}
+.jsscript.monokai-glow > div > span.red {
+  color: #F92672;
+}
+.jsscript.monokai-glow > div > span.red.bright,
+.jsscript.monokai-glow > div > span.red.bold {
+  color: #F92672;
+}
+.jsscript.monokai-glow > div > span.background-red {
+  background: #F92672;
+}
+.jsscript.monokai-glow > div > span.red.bright,
+.jsscript.monokai-glow > div > span.red.bold {
+  text-shadow: 0 0 5px "bright-red";
+}
+.jsscript.monokai-glow > div > span.green {
+  color: #A6E22E;
+}
+.jsscript.monokai-glow > div > span.green.bright,
+.jsscript.monokai-glow > div > span.green.bold {
+  color: #A6E22E;
+}
+.jsscript.monokai-glow > div > span.background-green {
+  background: #A6E22E;
+}
+.jsscript.monokai-glow > div > span.green.bright,
+.jsscript.monokai-glow > div > span.green.bold {
+  text-shadow: 0 0 5px "bright-green";
+}
+.jsscript.monokai-glow > div > span.yellow {
+  color: #E6DB74;
+}
+.jsscript.monokai-glow > div > span.yellow.bright,
+.jsscript.monokai-glow > div > span.yellow.bold {
+  color: #E6DB74;
+}
+.jsscript.monokai-glow > div > span.background-yellow {
+  background: #E6DB74;
+}
+.jsscript.monokai-glow > div > span.yellow.bright,
+.jsscript.monokai-glow > div > span.yellow.bold {
+  text-shadow: 0 0 5px "bright-yellow";
+}
+.jsscript.monokai-glow > div > span.blue {
+  color: #66D9EF;
+}
+.jsscript.monokai-glow > div > span.blue.bright,
+.jsscript.monokai-glow > div > span.blue.bold {
+  color: #66D9EF;
+}
+.jsscript.monokai-glow > div > span.background-blue {
+  background: #66D9EF;
+}
+.jsscript.monokai-glow > div > span.blue.bright,
+.jsscript.monokai-glow > div > span.blue.bold {
+  text-shadow: 0 0 5px "bright-blue";
+}
+.jsscript.monokai-glow > div > span.magenta {
+  color: #AE81FF;
+}
+.jsscript.monokai-glow > div > span.magenta.bright,
+.jsscript.monokai-glow > div > span.magenta.bold {
+  color: #AE81FF;
+}
+.jsscript.monokai-glow > div > span.background-magenta {
+  background: #AE81FF;
+}
+.jsscript.monokai-glow > div > span.magenta.bright,
+.jsscript.monokai-glow > div > span.magenta.bold {
+  text-shadow: 0 0 5px "bright-magenta";
+}
+.jsscript.monokai-glow > div > span.cyan {
+  color: #82CDB9;
+}
+.jsscript.monokai-glow > div > span.cyan.bright,
+.jsscript.monokai-glow > div > span.cyan.bold {
+  color: #82CDB9;
+}
+.jsscript.monokai-glow > div > span.background-cyan {
+  background: #82CDB9;
+}
+.jsscript.monokai-glow > div > span.cyan.bright,
+.jsscript.monokai-glow > div > span.cyan.bold {
+  text-shadow: 0 0 5px "bright-cyan";
+}
+.jsscript.monokai-glow > div > span.white {
+  color: #c0c0c0;
+}
+.jsscript.monokai-glow > div > span.white.bright,
+.jsscript.monokai-glow > div > span.white.bold {
+  color: #ffffff;
+}
+.jsscript.monokai-glow > div > span.background-white {
+  background: #c0c0c0;
+}
+.jsscript.monokai-glow > div > span.white.bright,
+.jsscript.monokai-glow > div > span.white.bold {
+  text-shadow: 0 0 5px "bright-white";
+}
+.jsscript.monokai-glow > div > span.inverse {
+  background: #F8F8F2;
+  color: #272822;
+}
+.jsscript.monokai-glow > div > span.inverse.black {
+  background: #000000;
+}
+.jsscript.monokai-glow > div > span.inverse.black.bright,
+.jsscript.monokai-glow > div > span.inverse.black.bold {
+  background: #808080;
+}
+.jsscript.monokai-glow > div > span.inverse.background-black {
+  color: #000000;
+}
+.jsscript.monokai-glow > div > span.inverse.black.bright,
+.jsscript.monokai-glow > div > span.inverse.black.bold {
+  text-shadow: 0 0 5px "bright-black";
+}
+.jsscript.monokai-glow > div > span.inverse.red {
+  background: #F92672;
+}
+.jsscript.monokai-glow > div > span.inverse.red.bright,
+.jsscript.monokai-glow > div > span.inverse.red.bold {
+  background: #F92672;
+}
+.jsscript.monokai-glow > div > span.inverse.background-red {
+  color: #F92672;
+}
+.jsscript.monokai-glow > div > span.inverse.red.bright,
+.jsscript.monokai-glow > div > span.inverse.red.bold {
+  text-shadow: 0 0 5px "bright-red";
+}
+.jsscript.monokai-glow > div > span.inverse.green {
+  background: #A6E22E;
+}
+.jsscript.monokai-glow > div > span.inverse.green.bright,
+.jsscript.monokai-glow > div > span.inverse.green.bold {
+  background: #A6E22E;
+}
+.jsscript.monokai-glow > div > span.inverse.background-green {
+  color: #A6E22E;
+}
+.jsscript.monokai-glow > div > span.inverse.green.bright,
+.jsscript.monokai-glow > div > span.inverse.green.bold {
+  text-shadow: 0 0 5px "bright-green";
+}
+.jsscript.monokai-glow > div > span.inverse.yellow {
+  background: #E6DB74;
+}
+.jsscript.monokai-glow > div > span.inverse.yellow.bright,
+.jsscript.monokai-glow > div > span.inverse.yellow.bold {
+  background: #E6DB74;
+}
+.jsscript.monokai-glow > div > span.inverse.background-yellow {
+  color: #E6DB74;
+}
+.jsscript.monokai-glow > div > span.inverse.yellow.bright,
+.jsscript.monokai-glow > div > span.inverse.yellow.bold {
+  text-shadow: 0 0 5px "bright-yellow";
+}
+.jsscript.monokai-glow > div > span.inverse.blue {
+  background: #66D9EF;
+}
+.jsscript.monokai-glow > div > span.inverse.blue.bright,
+.jsscript.monokai-glow > div > span.inverse.blue.bold {
+  background: #66D9EF;
+}
+.jsscript.monokai-glow > div > span.inverse.background-blue {
+  color: #66D9EF;
+}
+.jsscript.monokai-glow > div > span.inverse.blue.bright,
+.jsscript.monokai-glow > div > span.inverse.blue.bold {
+  text-shadow: 0 0 5px "bright-blue";
+}
+.jsscript.monokai-glow > div > span.inverse.magenta {
+  background: #AE81FF;
+}
+.jsscript.monokai-glow > div > span.inverse.magenta.bright,
+.jsscript.monokai-glow > div > span.inverse.magenta.bold {
+  background: #AE81FF;
+}
+.jsscript.monokai-glow > div > span.inverse.background-magenta {
+  color: #AE81FF;
+}
+.jsscript.monokai-glow > div > span.inverse.magenta.bright,
+.jsscript.monokai-glow > div > span.inverse.magenta.bold {
+  text-shadow: 0 0 5px "bright-magenta";
+}
+.jsscript.monokai-glow > div > span.inverse.cyan {
+  background: #82CDB9;
+}
+.jsscript.monokai-glow > div > span.inverse.cyan.bright,
+.jsscript.monokai-glow > div > span.inverse.cyan.bold {
+  background: #82CDB9;
+}
+.jsscript.monokai-glow > div > span.inverse.background-cyan {
+  color: #82CDB9;
+}
+.jsscript.monokai-glow > div > span.inverse.cyan.bright,
+.jsscript.monokai-glow > div > span.inverse.cyan.bold {
+  text-shadow: 0 0 5px "bright-cyan";
+}
+.jsscript.monokai-glow > div > span.inverse.white {
+  background: #c0c0c0;
+}
+.jsscript.monokai-glow > div > span.inverse.white.bright,
+.jsscript.monokai-glow > div > span.inverse.white.bold {
   background: #ffffff;
 }
-.jsscript.monokai > div > span.bright,
-.jsscript.monokai > div > span.bold {
-  font-weight: bold;
+.jsscript.monokai-glow > div > span.inverse.background-white {
+  color: #c0c0c0;
+}
+.jsscript.monokai-glow > div > span.inverse.white.bright,
+.jsscript.monokai-glow > div > span.inverse.white.bold {
+  text-shadow: 0 0 5px "bright-white";
 }

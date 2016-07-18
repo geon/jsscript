@@ -121,4 +121,39 @@
 			}
 		);
 	}
+
+	&.monokai-glow {
+		.terminal-colors(
+			#F8F8F2,
+			#272822,
+
+			#000000,
+			#F92672,
+			#A6E22E,
+			#E6DB74,
+			#66D9EF,
+			#AE81FF,
+			#82CDB9,
+			#c0c0c0,
+			#808080,
+			#F92672,
+			#A6E22E,
+			#E6DB74,
+			#66D9EF,
+			#AE81FF,
+			#82CDB9,
+			#ffffff,
+			{},
+			{
+				&.@{color-name} {
+
+					&.bright,
+					&.bold {
+						text-shadow: 0 0 5px @bright-color-name;
+					}
+				}
+			}
+
+		);
+	}
 }
